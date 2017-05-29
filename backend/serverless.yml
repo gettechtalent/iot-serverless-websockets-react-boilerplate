@@ -1,0 +1,57 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: serverless-boilerplate
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: dev
+  region: eu-west-1
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "iot:Connect"
+        - "iot:Publish"
+        - "iot:Subscribe"
+        - "iot:Receive"
+        - "iot:GetThingShadow"
+        - "iot:UpdateThingShadow"
+      Resource: "*"
+
+functions:
+  iotPresignedUrl:
+    handler: src/iotPresignedUrl.handler
+    timeout: 30
+    events:
+      - http: OPTIONS /iot-presigned-url
+      - http:
+          method: GET
+          path: /iot-presigned-url
+    environment:
+      IOT_AWS_REGION: 'your-iot-region'
+      IOT_ENDPOINT_HOST: 'your-iot-host'
+      IOT_ACCESS_KEY: 'your-access-key'
+      IOT_SECRET_KEY: 'your-secret-key'
+  notifyDisconnect:
+    handler: src/notifyDisconnect.handler
+    timeout: 30
+    events:
+      - iot:
+          sql: "SELECT * FROM 'last-will'"
+    environment:
+      IOT_AWS_REGION: 'your-iot-region'
+      IOT_ENDPOINT_HOST: 'your-iot-host'

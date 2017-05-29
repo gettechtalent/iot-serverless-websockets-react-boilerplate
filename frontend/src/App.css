@@ -1,0 +1,51 @@
+body {
+  padding-top: 50px !important;
+}
+
+@media (max-width: 614px) {
+  body {
+    padding-top: 260px !important;
+  }
+}
+
+.navbar-fixed-bottom .container-fluid {
+  padding-top: 7px;
+  margin-right: 0px;
+}
+
+.navbar .container {
+  margin: 0px !important;
+}
+
+#sidebar-wrapper {
+  height: 100%;
+  padding: 0px;
+  position: fixed;
+  border-right: 1px solid lightgray;
+  width: 23%;
+}
+
+#sidebar {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#sidebar .list-group-item {
+  border-radius: 0;
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 0 0 1px 0;
+  margin-top: 10px;
+}
+
+#messages .list-group-item {
+  border: 0;
+  margin: 10px 0 15px 0;
+}
+
+.modal-dialog {
+  position: absolute;
+  top: 35%;
+}
