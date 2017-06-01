@@ -50,17 +50,7 @@ Read below for how to set it up.
 - Install the dependencies: `npm install`
 
 - Start up the lambdas locally: `serverless offline --port 8080 start`. You should see something like this:
-```bash
-Serverless: Starting Offline: dev/eu-west-1.
-
-Serverless: Routes for iotPresignedUrl:
-Serverless: OPTIONS /iot-presigned-url
-Serverless: GET /iot-presigned-url
-
-Serverless: Routes for notifyDisconnect:
-
-Serverless: Offline listening on http://localhost:8080
-```
+![Alt text](/frontend/public/backend-start.png?raw=true "Offline listening on http://localhost:8080")
 
 - Navigate in the browser to `localhost:8080/iot-presigned-url`. You should see something like this:
 `{"url":"wss://3kdfgh39sdfyrte.iot.eu-west-1.amazonaws.com/mqtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DSJHGRJWFICUIYWEFSSD%2F20170529%2Feu-west-1%2Fiotdevicegateway%2Faws4_request&X-Amz-Date=20170529T063531Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=435876t863fd8fk43jtygdf34598e9ghdrt439g8rytk34hfd9854y3489tfydee"}`
@@ -72,18 +62,10 @@ Serverless: Offline listening on http://localhost:8080
 - Install the dependencies: `npm install`
 
 - Start up the front-end locally: `npm start`. You should see something like this:
-```bash
-Compiled successfully!
-
-You can now view frontend in the browser.
-
-  Local:            http://localhost:3000/
-  On Your Network:  http://192.168.0.1:3000/
-
-Note that the development build is not optimized.
-To create a production build, use npm run build.
-```
+![Alt text](/frontend/public/frontend-start.png?raw=true "Compiled successfully!")
 
 - Navigate in the browser to `localhost:3000`. You should see the Serverless IoT WebSockets chat app in action.
 
 - Feel free to open several browser tabs with the app and send some chat messages. You will see `Connected users` as well as `Messages` sections populated.
+
+![Alt text](/frontend/public/chat-window.png?raw=true "Chat app screenshot")
