@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: serverless-boilerplate
+service: serverless-aws-iot
 
 plugins:
   - serverless-offline
@@ -20,7 +20,7 @@ provider:
   name: aws
   runtime: nodejs6.10
   stage: dev
-  region: eu-west-1
+  region: eu-west-1 # Set your AWS region here
   iamRoleStatements:
     - Effect: "Allow"
       Action:
