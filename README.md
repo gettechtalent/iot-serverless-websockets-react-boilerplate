@@ -1,6 +1,6 @@
 # Serverless WebSockets chat based on AWS IoT and React
 
-This is the source code for the [Serverless AWS IoT tutorial](https://BLOG-POST-LINK-HERE). It's a WebSockets chat app demonstration. The backend is build on AWS Lambda using the [Serverless Framework](https://serverless.com/), the frontend is built on ReactJS using Bootstrap and [Create React App](https://github.com/facebookincubator/create-react-app).
+This is the source code for the [Serverless AWS IoT tutorial](https://BLOG-POST-LINK-HERE). It's a WebSockets chat app demonstration. The back-end is built on AWS Lambda using the [Serverless Framework](https://serverless.com/). The front-end is built on ReactJS using Bootstrap and [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Read below for how to set it up.
 
@@ -30,9 +30,9 @@ Read below for how to set it up.
 
 - Clone the repository: `git clone https://github.com/gettechtalent/REPO-LINK-HERE.git`
 
-## Set up the backend
+## Set up the back-end
 
-- Navigate to the backend folder: `cd backend`
+- Navigate to the back-end folder: `cd backend`
 
 - Install serverless: `npm install -g serverless`
 
@@ -55,9 +55,9 @@ Read below for how to set it up.
 - Navigate in the browser to `localhost:8080/iot-presigned-url`. You should see something like this:
 `{"url":"wss://3kdfgh39sdfyrte.iot.eu-west-1.amazonaws.com/mqtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DSJHGRJWFICUIYWEFSSD%2F20170529%2Feu-west-1%2Fiotdevicegateway%2Faws4_request&X-Amz-Date=20170529T063531Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=435876t863fd8fk43jtygdf34598e9ghdrt439g8rytk34hfd9854y3489tfydee"}`
 
-## Set up the frontend
+## Set up the front-end
 
-- Navigate to the frontend folder: `cd ../frontend`
+- Navigate to the front-end folder: `cd ../frontend`
 
 - Install the dependencies: `npm install`
 
