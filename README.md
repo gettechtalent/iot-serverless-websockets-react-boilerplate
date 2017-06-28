@@ -1,6 +1,6 @@
 # Serverless WebSockets chat based on AWS IoT and React
 
-This is the source code for the [Serverless AWS IoT tutorial](https://BLOG-POST-LINK-HERE). It's a WebSockets chat app demonstration. The back-end is built on AWS Lambda using the [Serverless Framework](https://serverless.com/). The front-end is built on ReactJS using Bootstrap and [Create React App](https://github.com/facebookincubator/create-react-app).
+This is the source code for the [Serverless AWS IoT tutorial](http://gettechtalent.com/blog/tutorial-real-time-frontend-updates-with-react-serverless-and-websockets-on-aws-iot.html#react). It's a WebSockets chat app demonstration. The back-end is built on AWS Lambda using the [Serverless Framework](https://serverless.com/). The front-end is built on ReactJS using Bootstrap and [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Read below for how to set it up.
 
