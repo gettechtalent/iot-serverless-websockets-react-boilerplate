@@ -9,7 +9,7 @@
     "crypto": "0.0.3"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
+    "eslint": "^6.6.0",
     "eslint-config-google": "^0.7.1",
     "serverless-offline": "^3.14.0"
   }
